@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.kuru.beans.Address" id="addr1">
+            <property name="lane" value="1"/>
+            <property name="city" value="lko"/>
+            <property name="pin" value="123454"/>
+    </bean>
+    <bean class="in.kuru.beans.Student" id="std1">
+        <property name="name" value="kuru"/>
+        <property name="roll" value="100"/>
+        <property name="address" ref="addr1"/>
+
+
+    </bean>
+
+</beans>

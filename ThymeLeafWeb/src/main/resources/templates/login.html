@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register here</title>
+    <!--    <link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+<h1>Welcome to Registration page</h1>
+
+<div th:if="${errorMsg}">
+    <h3 style="color: red" th:text="${errorMsg}"></h3>
+</div>
+
+<form th:action="@{/loginForm}" th:object="${user}" method="post">
+
+    email: <input type="email" th:field="*{email}"><br>
+    password: <input type="password" th:field="*{password}"><br>
+    <input type="submit" value="login"><br>
+</form>
+
+<a href="regPage">register here if new user</a>
+
+<!--<script src="index.js"></script>-->
+</body>
+</html>
