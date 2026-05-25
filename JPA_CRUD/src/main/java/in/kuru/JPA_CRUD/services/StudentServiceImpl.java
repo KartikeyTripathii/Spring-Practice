@@ -48,16 +48,5 @@ public class StudentServiceImpl implements StudentService
         }
     }
 
-    @Override
-    public Student updateStdMarks(Long id, float marks) {
-        Student std= getStdById(id);
-        std.setMarks(marks);
-
-        Student std1 = studentRepository.save(std);
-        if(std1.getName()!=null){
-            return std1;
-        }else{
-            return
-        }
-    }
 }
+

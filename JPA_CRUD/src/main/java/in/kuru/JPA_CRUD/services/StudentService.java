@@ -11,5 +11,4 @@ public interface StudentService
     List<Student> getAllStudents();
     Student getStdById(Long id);
 
-    Student updateStdMarks(Long id, float marks);
 }

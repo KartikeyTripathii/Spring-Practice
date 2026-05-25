@@ -45,12 +45,7 @@ public class JpaCrudApplication {
 
         //update student's marks by id
 
-        float marks=66.2f;
-        long id=1;
 
-        Student std= service.updateStdMarks(id, marks);
-
-        System.out.println(std);
 
 
 
